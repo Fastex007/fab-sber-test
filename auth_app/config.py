@@ -1,10 +1,7 @@
 import os
 from os import environ
+
 from flask_appbuilder.security.manager import (
-    AUTH_OID,
-    AUTH_REMOTE_USER,
-    AUTH_DB,
-    AUTH_LDAP,
     AUTH_OAUTH,
 )
 
@@ -35,8 +32,8 @@ OAUTH_PROVIDERS = [
         "icon": "fa-github",
         "token_key": "access_token",
         "remote_app": {
-            "client_id": environ.get("GITHUB_CLIENT_ID"),
-            "client_secret": environ.get("GITHUB_CLIENT_SECRET"),
+            "client_id": environ.get("GH_CLIENT_ID"),
+            "client_secret": environ.get("GH_CLIENT_SECRET"),
             "api_base_url": "https://api.github.com/",
             "access_token_url": "https://github.com/login/oauth/access_token",
             "authorize_url": "https://github.com/login/oauth/authorize",

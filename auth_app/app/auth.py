@@ -1,11 +1,10 @@
 from flask import g
-from flask import redirect, flash, render_template
+from flask import redirect, flash
 from flask_appbuilder import expose, BaseView
-from flask_login import login_user
+from flask_login import login_user, logout_user
 from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, SubmitField
 from wtforms.validators import DataRequired
-from flask_login import LoginManager, UserMixin,  login_required, login_user, current_user, logout_user
 
 from . import appbuilder
 

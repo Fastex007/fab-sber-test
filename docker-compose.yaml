@@ -5,6 +5,4 @@ services:
     restart: always
     build: .
     ports:
-      - "8080:8080"
-    env_file:
-      - auth_app/.env
+      - "80:8080"

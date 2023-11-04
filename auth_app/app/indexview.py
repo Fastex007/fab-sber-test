@@ -1,4 +1,3 @@
-from flask import g
 from flask_appbuilder import expose, IndexView
 
 
