@@ -1,0 +1,13 @@
+FROM python:3.8
+
+WORKDIR /app
+
+COPY . /app
+
+RUN pip install --no-cache-dir -r requirements.txt
+
+WORKDIR /app/auth_app
+
+EXPOSE 8080
+
+CMD ["python", "run.py"]

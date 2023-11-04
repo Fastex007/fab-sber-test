@@ -2,8 +2,14 @@
 
 {% block content %}
   <div style="text-align: center;">
-    Дратути
-  </div>
+    <h2>Дратути!</h2>
+    {% if current_user.is_authenticated %}
+      <div>
+        Ну, вот вы и авторизовались.
+        Теперь можно <a href="{{ url_for('AuthView.logout') }}">выйти</a> =)
+      </div>
+    {% else %}
+      <p>Можно авторизоваться <a href="{{ url_for('AuthOAuthView.login') }}">тут</a></p>
+      <p>А можно <a href="{{ url_for('AuthView.auth') }}">тут</a></p>
+    {% endif %}
 {% endblock %}
-
-

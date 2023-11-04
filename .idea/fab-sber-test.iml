@@ -2,9 +2,18 @@
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/auth_app" isTestSource="false" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.10 (fab-sber-test)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+  <component name="TemplatesService">
+    <option name="TEMPLATE_CONFIGURATION" value="Jinja2" />
+    <option name="TEMPLATE_FOLDERS">
+      <list>
+        <option value="$MODULE_DIR$/venv/lib/python3.10/site-packages/flask_appbuilder/templates" />
+        <option value="$MODULE_DIR$/auth_app/app/templates" />
+      </list>
+    </option>
   </component>
 </module>
